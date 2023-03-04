@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Sport is my life</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Test.html">Test</a>
+  <a href="Sport.html">Sport</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div style="height:200px;"><img src="2023-03-03_22-03-28-758.jpg"></div>
+      <p>Hello, my name is Andrii and this is my photo. This is my first big project on the topic "Project Development".</p>
+  </div>
+  <div class="main">
+      <h2>MY FIRST COMPETITION</h2>
+      <h5>Competition, Nov 7, 2016</h5>
+      <div style="height:200px;"><img src="image-0-02-05-889f78dfc90401c1e6891afc12c5738e6a3d8c1148892c2cfa76470da54de8e0-V.jpg"></div>
+      <p>.</p>
+      <p>My first competitions were in the arena at the stadium. Then we ran probably 600 meters, that is 3 and a half laps.</p>
+      <br>
+      <h2>MY LAST COMPETITION</h2>
+      <h5>Competition, Aug 20, 2021</h5>
+      <div style="height:200px;"><img src="IMG-01317b1b6322e251857f73cdc16ead91-V.jpg"></div>
+      <p>.</p>
+      <p>My last competition was at Kinbourn Spit. Then we ran 1 kilometer along the beach, it was very hard. It seemed to me that the whole beach was covered in my sneakers because there was a lot of sand.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>andr.k.12.7@gmail.com</h2>
+</div>
+
+</body>
